@@ -1,0 +1,13 @@
+nums = [2, 7, 11, 15]
+target = 9
+
+complements = {}
+
+for i in range(len(nums)):
+    complement = target - nums[i]
+    
+    if complement in complements:
+        print("Output:", [complements[complement], i])
+        break
+    
+    complements[nums[i]] = i
