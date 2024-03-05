@@ -1,0 +1,22 @@
+x = 4
+if x == 0 or x == 1:
+    print("Output:", x)
+else:
+    left = 1
+    right = x
+    while left <= right:
+        mid = (left + right) // 2
+        square = mid * mid
+        
+        if square == x:
+            print("Output:", mid)
+            break
+       
+        elif square > x:
+            right = mid - 1
+       
+        else:
+            left = mid + 1
+    else:
+        
+        print("Output:", right)
