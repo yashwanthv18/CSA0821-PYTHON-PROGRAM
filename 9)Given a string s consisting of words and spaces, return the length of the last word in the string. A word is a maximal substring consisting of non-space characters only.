@@ -1,0 +1,10 @@
+s = "Hello World"
+
+words = s.split()
+
+if not words:
+    print("Output: 0")
+else:
+   
+    last_word_length = len(words[-1])
+    print("Output:", last_word_length)
