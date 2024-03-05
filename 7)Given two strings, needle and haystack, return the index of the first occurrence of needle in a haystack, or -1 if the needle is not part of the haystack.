@@ -1,0 +1,10 @@
+haystack = "sadbutsad"
+needle = "sad"
+for i in range(len(haystack)):
+   
+    if haystack[i:i+len(needle)] == needle:
+        print("Output:", i)
+        break
+else:
+    
+    print("Output: -1")
